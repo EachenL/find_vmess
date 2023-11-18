@@ -7,4 +7,4 @@ output=$(echo "3" | v2ray)
 vmess_link=$(echo "$output" | awk '/vmess:\/\//{print $0; exit}')
 
 # 打印 vmess 链接
-echo "找到的 vmess 链接: $vmess_link"
+echo "$vmess_link"
